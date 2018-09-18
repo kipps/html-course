@@ -1,0 +1,68 @@
+%input-color {
+  color: white;
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+}
+
+[am-header] {
+  padding: 24px;
+}
+
+[am-header~="blue"] {
+  background: cornflowerblue;
+}
+
+[title] {
+  font: {
+    weight: bold;
+    size: 16px;
+  }
+  &[large] {
+    font-size: 28px;
+  }
+}
+
+input {
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, .6);
+  border-radius: 4px;
+
+  &[red] {
+    background: red;
+    @extend %input-color;
+  }
+  &[black] {
+    background: black;
+    @extend %input-color;
+  }
+}
+
+[mb~="24"] {
+  margin-bottom: 24px;
+}
+
+[am-button] {
+  border: 0;
+  font-size: 14px;
+  padding: 8px 16px;
+
+  &[size~="large" ] {
+    font-size: 18px;
+    padding: 8px 24px;
+  }
+  &[size~="small" ] {
+    font-size: 12px;
+    padding: 8px;
+  }
+  &[bg] {
+    color: white;
+  }
+  &[bg~="black"] {
+    background: black;
+  }
+  &[green] {
+    background: green;
+  }
+}
+

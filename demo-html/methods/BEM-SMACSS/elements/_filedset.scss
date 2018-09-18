@@ -1,0 +1,7 @@
+.filedset {
+  border: map_get($borders, simple);
+  border:{
+    radius: 4px;
+    width: 3px;
+  }
+}

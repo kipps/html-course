@@ -1,0 +1,7 @@
+body {
+  background: map_get($bg, body);
+  font: {
+    family: "Helvetica Neue";
+    size: 14px;
+  }
+}

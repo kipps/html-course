@@ -1,0 +1,47 @@
+$colors: (
+        --red: red,
+        --blue: blue,
+        --indigo: indigo,
+        --green: green,
+        --orange: orange
+);
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.box {
+  $size: 120px;
+  height: $size;
+  margin: 0 8px 8px;
+  width: $size;
+
+  //&--red {
+  //  background: map_get($colors, red);
+  //}
+  //
+  //&--green {
+  //  background: map_get($colors, green);
+  //}
+  //
+  //&--orange {
+  //  background: map_get($colors, orange);
+  //}
+  //
+  //&--blue {
+  //  background: map_get($colors, blue);
+  //}
+  //
+  //&--indigo {
+  //  background: map_get($colors, indigo);
+  //}
+
+  @each $name, $color in $colors {
+    &#{$name} {
+      background: $color;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.header {
+  background: map_get($bg, header);
+  padding: 24px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__input {
+    position: absolute;
+    margin-bottom: 24px;
+  }
+}

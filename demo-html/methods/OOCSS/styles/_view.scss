@@ -1,0 +1,32 @@
+%plh-white {
+  color: white;
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+}
+
+.green {
+  background: lightseagreen;
+}
+
+.red {
+  background: red;
+  @extend %plh-white;
+}
+
+.black {
+  background: black;
+  @extend %plh-white;
+}
+
+.border-dotted {
+  border: 3px dotted white;
+}
+
+.border {
+  border: 1px solid rgba(0,0,0, .4);
+}
+
+.radius {
+  border-radius: 4px;
+}
