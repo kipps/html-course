@@ -1,0 +1,41 @@
+/* --- Tools --- */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.row {
+    margin: 0 -16px;
+}
+
+.clearfix::after, .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 24px 0;
+}
+
+/* --- Main styles --- */
+
+.parent {
+    background: lightseagreen;
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+
+
+.child {
+    background: lightgreen;
+    height: 100px;
+    width: 100px;
+    margin: 0 16px;
+}

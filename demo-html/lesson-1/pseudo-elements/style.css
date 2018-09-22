@@ -1,0 +1,55 @@
+/* --- Tools --- */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.row {
+    margin: 0 -16px;
+}
+
+.clearfix::after, .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 24px 0;
+}
+
+/* --- Main styles --- */
+
+.parent {
+    background: lightseagreen;
+    padding: 16px;
+    margin: 0 0 16px;
+}
+
+
+
+.child {
+    background: lightgreen;
+    height: 100px;
+    width: 100px;
+    margin: 0 16px 16px;
+}
+
+.child:nth-child(3n) {
+    background: orange;
+}
+
+.child:first-child {
+    background: lightcoral;
+}
+
+.child:last-child {
+    background: lightcoral;
+    position: relative;
+    top:24px;
+}
