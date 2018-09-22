@@ -1,0 +1,54 @@
+$color-text: white;
+$bg-header: darkslateblue;
+// .header__logo
+
+.header {
+  background: $bg-header;
+  padding: 24px;
+
+  &__logo {
+    color: $color-text;
+  }
+
+  &__search {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__nav {
+    padding: 16px 0;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 8px;
+  }
+}
+
+.link {
+  color: $color-text;
+  &:hover, &:active, &:focus {
+    color: orange;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input {
+  border: 0;
+  background: $color-text;
+  line-height: 1.4;
+  padding: 0 8px;
+  min-height:32px;
+  outline: none;
+  background: map_get($obj, val);
+}
+
+//// task 2
+
+
+$colors: Как сварить меняВоЛондон

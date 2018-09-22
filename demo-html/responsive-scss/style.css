@@ -1,0 +1,26 @@
+.header {
+  padding: 24px; }
+  @media (min-width: 1024px) {
+    .header {
+      background: red; } }
+  @media (max-width: 992px) {
+    .header {
+      background: green; } }
+  @media (max-width: 37.5em) {
+    .header {
+      background: black; } }
+  .header__logo {
+    font-size: 28px; }
+
+@media (min-width: 1024px) {
+  .pull-left {
+    float: left; } }
+
+@media (min-width: 1024px) {
+  .pull-right {
+    float: right; } }
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }

@@ -1,0 +1,35 @@
+body {
+  background: rgba(0, 0, 0, 0.05);
+  font-family: "Helvetica Neue";
+  font-size: 14px; }
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: none; }
+  .input--red {
+    background: red;
+    color: white; }
+    .input--red:-moz-placeholder {
+      color: white; }
+    .input--red::-webkit-input-placeholder {
+      color: white; }
+  .input--black {
+    background: rgba(0, 0, 0, 0.8);
+    color: white; }
+    .input--black:-moz-placeholder {
+      color: white; }
+    .input--black::-webkit-input-placeholder {
+      color: white; }
+
+.filedset {
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border-width: 3px; }
+
+.header {
+  background: yellowgreen;
+  padding: 24px; }
+  .header__title {
+    margin-bottom: 32px; }

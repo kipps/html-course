@@ -1,0 +1,20 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 24px; }
+
+.box {
+  height: 120px;
+  margin: 0 8px 8px;
+  width: 120px; }
+  .box--red {
+    background: red; }
+  .box--blue {
+    background: blue; }
+  .box--indigo {
+    background: indigo; }
+  .box--green {
+    background: green; }
+  .box--orange {
+    background: orange; }

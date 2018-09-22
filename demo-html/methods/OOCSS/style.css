@@ -1,0 +1,34 @@
+.red, .black {
+  color: white; }
+  .red::-webkit-input-placeholder, .black::-webkit-input-placeholder {
+    color: white; }
+
+.green {
+  background: lightseagreen; }
+
+.red {
+  background: red; }
+
+.black {
+  background: black; }
+
+.border-dotted {
+  border: 3px dotted white; }
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.4); }
+
+.radius {
+  border-radius: 4px; }
+
+.header {
+  padding: 24px; }
+
+.input {
+  padding: 8px 16px; }
+
+.fieldset {
+  padding: 8px; }
+
+.title {
+  margin-bottom: 24px; }
