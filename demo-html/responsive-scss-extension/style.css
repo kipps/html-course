@@ -1,0 +1,80 @@
+@media (min-width: 1024px) {
+  .pull-left {
+    float: left; } }
+
+@media (min-width: 1024px) {
+  .pull-right {
+    float: right; } }
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.header {
+  background-color: lightseagreen;
+  font-family: "Helvetica Neue";
+  padding: 24px;
+  position: relative; }
+  .header__logo {
+    font-size: 28px;
+    color: white; }
+  .header__tools {
+    padding: 8px 0 0;
+    width: calc(100% - 150px); }
+    @media (max-width: 992px) {
+      .header__tools {
+        width: 100%; } }
+  .header__nav-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -16px 16px; }
+    @media (max-width: 992px) {
+      .header__nav-list {
+        display: none; } }
+  .header__nav-item {
+    color: white;
+    margin: 0 16px; }
+  @media (max-width: 992px) {
+    .header__nav {
+      position: absolute;
+      top: 20px;
+      right: 24px; }
+      .header__nav:hover .header__nav-list {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        padding: 16px;
+        position: absolute;
+        right: 0;
+        width: 200px; }
+        .header__nav:hover .header__nav-list li {
+          margin: 8px 0;
+          color: gray;
+          padding: 4px; }
+          .header__nav:hover .header__nav-list li:hover {
+            background: orange;
+            color: white; } }
+  .header__menu-button {
+    display: none;
+    text-decoration: none;
+    color: white; }
+    .header__menu-button:hover, .header__menu-button:focus, .header__menu-button:active {
+      color: rgba(255, 255, 255, 0.7); }
+    @media (max-width: 992px) {
+      .header__menu-button {
+        display: inline-block; } }
+  @media (max-width: 992px) {
+    .header__form {
+      display: block; } }
+
+@media (max-width: 992px) {
+  .search__input {
+    float: left;
+    width: calc(100% - 150px); } }
+
+@media (max-width: 992px) {
+  .search__button {
+    float: right;
+    width: 100px; } }

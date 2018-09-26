@@ -20,6 +20,9 @@ gulp.task('scss-responsive', function () {
   gulp.src('./responsive-scss/**/*.scss')
     .pipe(scss().on('error', scss.logError))
     .pipe(gulp.dest('./responsive-scss'));
+  gulp.src('./responsive-scss-extension/**/*.scss')
+    .pipe(scss().on('error', scss.logError))
+    .pipe(gulp.dest('./responsive-scss-extension'));
 });
 
 gulp.task('watch', function () {

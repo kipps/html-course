@@ -1,0 +1,137 @@
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+.pull {
+  &-left {
+    @include breakpoint(laptop) {
+      float: left;
+    }
+  }
+
+  &-right {
+    @include breakpoint(laptop) {
+      float: right;
+    }
+  }
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.header {
+  background-color: lightseagreen;
+  font-family: "Helvetica Neue";
+  padding: 24px;
+  position: relative;
+
+  &__logo {
+    font-size: 28px;
+    color: white;
+  }
+
+  &__tools {
+    padding: 8px 0 0;
+    width: calc(100% - 150px);
+    @include breakpoint(tablet) {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      margin: 0 -16px 16px;
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
+    &-item {
+      color: white;
+      margin: 0 16px;
+    }
+    @include breakpoint(tablet) {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      &:hover {
+        .header__nav-list {
+          background: white;
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0,0,0,.2);
+          display: inline-block;
+          padding: 16px;
+          position: absolute;
+          right: 0;
+          width: 200px;
+          li {
+            margin: 8px 0;
+            color: gray;
+            padding: 4px;
+            &:hover {
+              background: orange;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__menu-button {
+    display: none;
+    text-decoration: none;
+    color: white;
+    &:hover, &:focus, &:active {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    @include breakpoint(tablet) {
+      display: inline-block;
+    }
+  }
+
+  &__form {
+    @include breakpoint(tablet) {
+      display: block;
+    }
+  }
+}
+
+.search {
+  &__input {
+    @include breakpoint(tablet) {
+      float: left;
+      width: calc(100% - 150px);
+    }
+  }
+
+  &__button {
+    @include breakpoint(tablet) {
+      float: right;
+      width: 100px;
+    }
+  }
+}
