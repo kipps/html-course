@@ -7,56 +7,62 @@
 </head>
 <body>
 
-<header class="header header-fix">
-    <form action="#" class="header__form form mb-16">
-        <fieldset class="header__filedset filedset">
-            <h4 class="header__title title">Inputs</h4>
-            <input type="text" class="
-            [ header__input input ]
-            [ flex flex-center ]
-            [ mb-16 pt-24 ]
-            " placeholder="Simple Input...">
-            <input type="text" class="header__input input mb-16" placeholder="Simple Input...">
-            <input type="text" class="header__input input mb-16" placeholder="Simple Input...">
-            <input type="text" class="header__input input input--red mb-32" placeholder="Red Input...">
-            <input type="text" class="header__input input input--black" placeholder="black Input...">
-        </fieldset>
-    </form>
+    <!-- Grid -->
+    <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+
+               <!-- BEM's Component -->
+               <header class="c-header">
+
+                   <div class="c-header__brand">
+                       <h1>
+                           <a href="/" class="c-header__brand-link">
+                                <img src="../images/logo.png" alt="logo" class="c-header__logo" />
+                           </a>
+                       </h1>
+                   </div>
+
+                </header>
+                <!-- END BEM's Component -->
+
+               <div class="row">
+                   <div class="col-md-4">
+
+                       <!-- Aside Component -->
+                       <aside class="c-aside">
+                           <nav class="c-aside__navigation navigation">
+                               <ul class="c-aside__navigation-list navigation__list">
+                                   <li class="c-aside__navigation-item navigation__item">
+                                       <a href='/any-link' class="c-aside__navigation__link navigation-link link">Link</a>
+                                   </li>
+                               </ul>
+                           </nav>
+                       </aside>
+                       <!-- END Aside Component -->
+
+                   </div>
+                   <div class="col-md-8">
+
+                        <!-- Form Component -->
+                        <form action="#" class="c-form form">
+                            <fieldset class="c-form__filedset-name filedset">
+                                    <h4 class="c-form__title title">Inputs</h4>
+                                    <input type="text" class="c-form__input input" placeholder="Simple Input...">
+                                    <input type="text" class="c-form__input input" placeholder="Simple Input...">
+                                    <input type="text" class="c-form__input input" placeholder="Simple Input...">
+                            </fieldset>
+
+                            <button class="c-form__button button">Submit</button>
+                        </form>
+                       <!-- Form Component -->
+
+                   </div>
+               </div>
+
+           </div>
+       </div>
     </div>
-</header>
 
 </body>
 </html>
-
-<input type="text" class="red border mb-24">
-<input type="text" class="green shadow mb-24">
-
-<div class="BigComponent">
-  <div class="BigComponent__branding">
-    <a href="/" class="BigComponent__home-link">
-      <img src="logo" class="BigComponent__logo" alt="">
-    </a>
-
-
-    <nav class="BigComponent__menu SmallComponent">
-      <ul class="SmallComponent__list">
-        <li class="BigComponent__elemtnt --modificator">
-          <a href="#" class="Link Link--header Font Font-sm">Text</a>
-        </li>
-        <li class="SmallComponent__listItem">
-          <a href="#" class="Link Link--header">Text</a>
-        </li>
-        <li class="SmallComponent__listItem">
-          <a href="#" class="Link Link--header">Text</a>
-        </li>
-        <li class="SmallComponent__listItem">
-          <a href="#" class="Link Link--header">Text</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div>
-      <a href="#" class="BigComponent__link">text</a>
-    </div>
-  </div>
-</div>
