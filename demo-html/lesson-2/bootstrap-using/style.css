@@ -98,21 +98,21 @@ input {
 }
 
 
-.Class {
-    color: red;
-    font-size: 10px;
+/*.Class {*/
+/*    color: red;*/
+/*    font-size: 10px;*/
 
-    @extend breakpoint(table) {
-        width: 100%;
+/*    @extend breakpoint(table) {*/
+/*        width: 100%;*/
 
-        .child {
-            color: green;
-        }
-    }
-    @extend breakpoint(laptop) {
-        width: 100%;
-    }
-}
+/*        .child {*/
+/*            color: green;*/
+/*        }*/
+/*    }*/
+/*    @extend breakpoint(laptop) {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
 
 
 button {

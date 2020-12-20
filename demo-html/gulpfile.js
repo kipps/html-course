@@ -9,6 +9,12 @@ gulp.task('scss', function () {
     .pipe(gulp.dest('./methods'));
 });
 
+gulp.task('v', function () {
+  gulp.src('./vertical/**/*.scss')
+    .pipe(scss().on('error', scss.logError))
+    .pipe(gulp.dest('./vertical'));
+});
+
 gulp.task('scss-maps', function () {
   gulp.src('./maps/**/*.scss')
     .pipe(scss().on('error', scss.logError))

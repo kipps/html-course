@@ -1,0 +1,160 @@
+.item {
+  margin: 8px;
+  position: relative;
+  box-sizing: border-box;
+
+  &:after, &:before {
+    position: absolute;
+    content: '';
+    background: red;
+    z-index: 1;
+  }
+
+  &:after {
+    height: 1px;
+    width: calc(100% - 4px);
+    left: 2px;
+    top: calc(100px + 33px);
+  }
+
+  &:before {
+
+    height: calc(100% - 36px);
+    width: 1px;
+    top: 34px;
+    left: 102px;
+  }
+
+  span {
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    height: 24px;
+    box-sizing: border-box;
+  }
+}
+
+.parent {
+  $size: 200px;
+  height: $size;
+  width: $size;
+  border: 2px solid black;
+  box-sizing: border-box;
+
+  &.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.margin {
+    // We know HEIGHT of parent and of child
+    .child {
+      height: $size/2;
+      margin: 50px;
+    }
+  }
+
+  &.line-height {
+    line-height: $size;
+
+    // optional
+    text-align: center;
+
+    .child {
+      white-space: nowrap;
+      overflow: hidden;
+
+      //inline, upset
+      display: unset;
+    }
+  }
+
+  &.stretch {
+    position: relative;
+
+    .child {
+      height: $size/2;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+
+      // auto 0 OR just auto
+      margin: auto;
+
+      //optional
+      left: 0;
+      right: 0;
+
+    }
+  }
+
+  &.negative-margin {
+    position: relative;
+
+    .child {
+      height: $size/2;
+      position: absolute;
+      top: 50%;
+      margin-top: $size/2/2 * (-1);
+
+      //optional
+      left: 50%;
+      margin-left: $size/2/2 * (-1);
+    }
+  }
+
+  &.transform {
+    position: relative;
+
+    .child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+
+      //optional
+      left: 50%;
+    }
+  }
+
+  &.pseudo-element {
+
+    // optional
+    text-align: center;
+
+    &:before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: "";
+    }
+
+    .child {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  background: lightpink;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  margin-left: -8px;
+  margin-right: -8px;
+  flex-wrap: wrap;
+}
+
+
+
