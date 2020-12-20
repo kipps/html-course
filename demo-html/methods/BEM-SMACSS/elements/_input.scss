@@ -1,8 +1,11 @@
 .input {
-  border: map_get($borders, input);
   border-radius: 4px;
   padding: 8px 16px;
   outline: none;
+
+  &--border {
+    border: map_get($borders, input);
+  }
 
   &--red {
     background: red;
@@ -26,3 +29,6 @@
     }
   }
 }
+
+
+

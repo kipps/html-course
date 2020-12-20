@@ -40,3 +40,82 @@ input {
         margin-bottom: 24px;
     }
 }
+
+.our-container {
+    max-width: 800px;
+    width: 100%;
+    background: lightgoldenrodyellow;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.our-container:after {
+    content: '';
+    display: flex;
+    clear: both;
+}
+
+.left-sidebar, .right-sidebar {
+    float: left;
+    width: 50%;
+    padding: 32px;
+    text-align: center;
+}
+
+.left-sidebar {
+    background: rgba(0, 0, 0, .1);
+}
+.right-sidebar {
+    background: rgba(255, 255, 255, .2);
+}
+
+@media all and (max-width: 990px) {
+    .our-container {
+        background: red;
+        color: white;
+    }
+
+    .left-sidebar, .right-sidebar {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+/*Block CSS */
+
+.container-our {
+    width: 100%;
+    margin: 12px 24px;
+}
+
+
+@media all and (max-width: 1200px) {
+    .container-our {
+        width: 100%;
+        margin: 12px 24px;
+    }
+}
+
+
+.Class {
+    color: red;
+    font-size: 10px;
+
+    @extend breakpoint(table) {
+        width: 100%;
+
+        .child {
+            color: green;
+        }
+    }
+    @extend breakpoint(laptop) {
+        width: 100%;
+    }
+}
+
+
+button {
+    outline: none;
+}
+

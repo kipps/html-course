@@ -18,7 +18,7 @@ p {
 }
 
 .main {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
     padding-top: 16px;
     width: calc(100% - 300px);
@@ -61,3 +61,13 @@ p {
 .order {
     flex: 1 1 auto;
 }
+
+
+
+
+
+
+
+
+
+

@@ -7,15 +7,19 @@
 </head>
 <body>
 
-<header class="c-header">
-    <form action="#" class="header__form form">
-        <fieldset class="header__filedset-name filedset">
+<header class="header header-fix">
+    <form action="#" class="header__form form mb-16">
+        <fieldset class="header__filedset filedset">
             <h4 class="header__title title">Inputs</h4>
-            <input type="text" class="header__input input" placeholder="Simple Input...">
-            <input type="text" class="header__input input" placeholder="Simple Input...">
-            <input type="text" class="header__input input" placeholder="Simple Input...">
-            <!--<input type="text" class="header__input input input&#45;&#45;red" placeholder="Red Input...">-->
-            <!--<input type="text" class="header__input input input&#45;&#45;black" placeholder="black Input...">-->
+            <input type="text" class="
+            [ header__input input ]
+            [ flex flex-center ]
+            [ mb-16 pt-24 ]
+            " placeholder="Simple Input...">
+            <input type="text" class="header__input input mb-16" placeholder="Simple Input...">
+            <input type="text" class="header__input input mb-16" placeholder="Simple Input...">
+            <input type="text" class="header__input input input--red mb-32" placeholder="Red Input...">
+            <input type="text" class="header__input input input--black" placeholder="black Input...">
         </fieldset>
     </form>
     </div>
@@ -23,3 +27,36 @@
 
 </body>
 </html>
+
+<input type="text" class="red border mb-24">
+<input type="text" class="green shadow mb-24">
+
+<div class="BigComponent">
+  <div class="BigComponent__branding">
+    <a href="/" class="BigComponent__home-link">
+      <img src="logo" class="BigComponent__logo" alt="">
+    </a>
+
+
+    <nav class="BigComponent__menu SmallComponent">
+      <ul class="SmallComponent__list">
+        <li class="BigComponent__elemtnt --modificator">
+          <a href="#" class="Link Link--header Font Font-sm">Text</a>
+        </li>
+        <li class="SmallComponent__listItem">
+          <a href="#" class="Link Link--header">Text</a>
+        </li>
+        <li class="SmallComponent__listItem">
+          <a href="#" class="Link Link--header">Text</a>
+        </li>
+        <li class="SmallComponent__listItem">
+          <a href="#" class="Link Link--header">Text</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="#" class="BigComponent__link">text</a>
+    </div>
+  </div>
+</div>
