@@ -1,0 +1,31 @@
+.input {
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: none;
+
+  &--border {
+    border: map_get($borders, input);
+  }
+
+  &--red {
+    background: red;
+    color: white;
+    &:-moz-placeholder {
+      color: white;
+    }
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+  }
+
+  &--black {
+    background: rgba(0,0,0, .8);
+    color: white;
+    &:-moz-placeholder {
+      color: white;
+    }
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+  }
+}
