@@ -1,0 +1,97 @@
+.item {
+  margin: 8px;
+  position: relative;
+  box-sizing: border-box; }
+  .item:after, .item:before {
+    position: absolute;
+    content: '';
+    background: red;
+    z-index: 1; }
+  .item:after {
+    height: 1px;
+    width: calc(100% - 4px);
+    left: 2px;
+    top: calc(100px + 33px); }
+  .item:before {
+    height: calc(100% - 36px);
+    width: 1px;
+    top: 34px;
+    left: 102px; }
+  .item span {
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    height: 24px;
+    box-sizing: border-box; }
+
+.parent {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  box-sizing: border-box; }
+  .parent.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .parent.margin .child {
+    height: 100px;
+    margin: 50px; }
+  .parent.line-height {
+    line-height: 200px;
+    text-align: center; }
+    .parent.line-height .child {
+      white-space: nowrap;
+      overflow: hidden;
+      display: unset; }
+  .parent.stretch {
+    position: relative; }
+    .parent.stretch .child {
+      height: 100px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0; }
+  .parent.negative-margin {
+    position: relative; }
+    .parent.negative-margin .child {
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 50%;
+      margin-left: -50px; }
+  .parent.transform {
+    position: relative; }
+    .parent.transform .child {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%; }
+  .parent.pseudo-element {
+    text-align: center; }
+    .parent.pseudo-element:before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: ""; }
+    .parent.pseudo-element .child {
+      display: inline-block;
+      vertical-align: middle; }
+  .parent.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center; }
+
+.child {
+  height: 100px;
+  width: 100px;
+  background: lightpink; }
+
+.container {
+  display: flex;
+  padding: 40px;
+  margin-left: -8px;
+  margin-right: -8px;
+  flex-wrap: wrap; }

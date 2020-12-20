@@ -15,6 +15,12 @@ gulp.task('v', function () {
     .pipe(gulp.dest('./vertical'));
 });
 
+gulp.task('s', function () {
+  gulp.src('./sticky/**/*.scss')
+    .pipe(scss().on('error', scss.logError))
+    .pipe(gulp.dest('./sticky'));
+});
+
 gulp.task('scss-maps', function () {
   gulp.src('./maps/**/*.scss')
     .pipe(scss().on('error', scss.logError))
