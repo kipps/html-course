@@ -9,6 +9,12 @@ gulp.task('scss', function () {
     .pipe(gulp.dest('./methods'));
 });
 
+gulp.task('a', function () {
+  gulp.src('./accessibility/**/*.scss')
+    .pipe(scss().on('error', scss.logError))
+    .pipe(gulp.dest('./accessibility'));
+});
+
 gulp.task('v', function () {
   gulp.src('./vertical/**/*.scss')
     .pipe(scss().on('error', scss.logError))
@@ -19,6 +25,12 @@ gulp.task('s', function () {
   gulp.src('./sticky/**/*.scss')
     .pipe(scss().on('error', scss.logError))
     .pipe(gulp.dest('./sticky'));
+});
+
+gulp.task('t', function () {
+  gulp.src('./tricks/**/*.scss')
+    .pipe(scss().on('error', scss.logError))
+    .pipe(gulp.dest('./tricks'));
 });
 
 gulp.task('scss-maps', function () {

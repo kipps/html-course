@@ -1,0 +1,73 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.demo {
+  &-item {
+    margin-bottom: 24px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.box-sizing{
+  display: flex;
+  margin: 0 -20px;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background: antiquewhite;
+    border: 1px solid lightpink;
+
+    &.border-box {
+      box-sizing: border-box;
+    }
+  }
+}
+
+.link {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 16px;
+  &:after {
+    display: inline-block;
+    width: 24px;
+    position: relative;
+    margin-left: 8px;
+    content: '';
+    top: 3px;
+  }
+
+  &[href$=".pdf"] {
+    &:after {
+      background: url(./img/icons/iconfinder_pdf_272711.png) no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &[href^="tel:"] {
+    &:after {
+      background:  url('./img/icons/iconfinder_phone_326545.png') no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &[href^="mailto:"] {
+    &:after {
+      content: url('./img/icons/iconfinder_envelope_461373.svg');
+    }
+  }
+}

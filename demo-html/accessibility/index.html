@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accessibility</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container">
+	<form action="#" class="accessibility__form form" id="myBillingId" aria-label="Our form example" role="form"
+		  name="example">
+
+		<div class="--non-accessibility">
+			<fieldset class="accessibility__fieldset">
+				<legend>
+					<h2>Buy food very simple</h2>
+					<p>We could send it for you in day.</p>
+				</legend>
+				<div>
+					<label class="form__label" id="expLabel" for="expire">Date of order:</label>
+					<input class="form__input" type="text" name="expire" id="expire">
+					<span>MM/YYYY</span>
+				</div>
+				<div>
+					<label class="form__label" for="name">Your name (required): </label>
+					<input class="form__input" type="text" name="name" id="name">
+				</div>
+
+				<div>
+					<label class="form__label checkbox" for="variant_1">
+						<span>Apple</span>
+						<input class="form__checkbox" type="checkbox" value="1" name="variant_1" id="variant_1">
+					</label>
+					<label class="form__label checkbox" for="variant_2">
+						<span>Banana</span>
+						<input class="form__checkbox" type="checkbox" value="2" name="variant_2" id="variant_2">
+					</label>
+					<label class="form__label checkbox" for="variant_3">
+						<span>Cherry</span>
+						<input class="form__checkbox" type="checkbox" value="3" name="variant_3" id="variant_3">
+					</label>
+				</div>
+
+				<div>
+					<p>Also, you can choose any present:</p>
+					<label><input name="r-button-1" type="radio" value="r-button-1">Chocolate</label>
+					<label><input name="r-button-1" type="radio" value="r-button-2">Coffee</label>
+					<label><input name="r-button-1" type="radio" value="r-button-3" checked>Pice of cake</label>
+					<label><input name="r-button-1" type="radio" value="r-button-3" checked>No, thanks!</label>
+				</div>
+
+				<div class="form__buttons-group">
+					<button type="submit">
+						Make order
+					</button>
+
+					<button>
+						Cancel
+					</button>
+				</div>
+			</fieldset>
+		</div>
+
+
+		<div>
+			<fieldset class="accessibility__fieldset">
+				<legend>
+					<h2 role="heading" title="Accessibility form" id="form-title" aria-level="1">Buy food very
+						simple</h2>
+					<p id="form-description">We could send it for you in day.</p>
+				</legend>
+				<div>
+					<label class="form__label" id="expLabel-accessibility" for="expire">Date of order:</label>
+					<input class="form__input" type="text" name="expire-accessibility" aria-label="Expiration date"
+						   aria-describedby="expDesc-accessibility">
+					<span id="expDesc-accessibility">MM/YYYY</span>
+				</div>
+				<div>
+					<label class="form__label" for="name-accessibility">Your name (required): </label>
+					<input class="form__input" type="text" name="name-accessibility" id="name-accessibility" required
+						   aria-required="true">
+				</div>
+
+
+				<div>
+					<label class="form__label checkbox" for="variant_1-accessibility">
+						<span>Apple</span>
+						<input class="form__checkbox" type="checkbox" value="1" name="variant_1-accessibility"
+							   id="variant_1-accessibility">
+					</label>
+					<label class="form__label checkbox" for="variant_2-accessibility">
+						<span>Banana</span>
+						<input class="form__checkbox" type="checkbox" value="2" name="variant_2-accessibility"
+							   id="variant_2-accessibility">
+					</label>
+					<label class="form__label checkbox" for="variant_3-accessibility">
+						<span>Cherry</span>
+						<input class="form__checkbox" type="checkbox" value="3" name="variant_3-accessibility"
+							   id="variant_3-accessibility">
+					</label>
+				</div>
+
+				<div>
+					<p id="radio_label" role="heading" aria-roledescription="Description of radio buttons"
+					   aria-level="2">Also, you can choose any present:</p>
+					<ul role="radiogroup" aria-labelledby="radio_label">
+						<li>
+							<label><input name="r-button-1ac" type="radio" value="r-button-1">Chocolate</label>
+						</li>
+						<li>
+							<label><input name="r-button-1ac" type="radio" value="r-button-2">Coffee</label>
+						</li>
+						<li>
+							<label><input name="r-button-1ac" type="radio" value="r-button-3" checked>Pice of
+								cake</label>
+						</li>
+						<li>
+							<label><input name="r-button-1ac" type="radio" value="r-button-4" checked>No,
+								thanks!</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="form__buttons-group">
+					<button id="done" type="submit" aria-label="Submit form"
+							aria-labelledby="form-title form-description">
+						Make order
+					</button>
+
+					<button id="cancel-button" aria-label="Cancel form" aria-labelledby="form-title form-description">
+						Cancel
+					</button>
+				</div>
+			</fieldset>
+		</div>
+	</form>
+</div>
+</body>
+</html>

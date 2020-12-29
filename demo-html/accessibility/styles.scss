@@ -1,0 +1,125 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input, button, textarea {
+  &:focus {
+    outline: 2px solid blue;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+button {
+  border: 0;
+  background: transparent;
+  padding: 16px;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .1s all ease-in-out;
+
+  &:hover {
+    $color: orange;
+    border-color: $color;
+    color: $color;
+  }
+}
+
+.accessibility {
+  &__form {
+    display: flex;
+    gap: 20px;
+    padding-top: 32px;
+
+    > div {
+      background: rgba(palegreen, .4);
+      display: flex;
+      flex: 1 1 50%;
+      padding: 16px;
+      position: relative;
+      &:after {
+        content: 'Best practice';
+        font-family: Verdana;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 11px;
+        opacity: .4;
+      }
+    }
+
+    .--non-accessibility {
+      background: rgba(lightpink, .3);
+      &:after {
+        content: 'Bad practice';
+        left: 10px;
+        right: unset;
+      }
+      * {
+        outline: none !important;
+      }
+    }
+  }
+
+  &__fieldset {
+    border: none;
+
+    legend {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+    }
+
+    input {
+      margin: 0;
+
+      &[type=radio], &[type=checkbox] {
+        margin-right: 8px;
+      }
+    }
+
+    label {
+      display: flex;
+    }
+
+    div + div {
+      margin-top: 24px;
+    }
+
+    div:last-of-type {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.checkbox {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+
+.form {
+  &__buttons-group {
+    display: flex;
+    gap: 24px;
+
+    button:last-of-type {
+      border-color: rgba(black, .3);
+      color: rgba(black, .3);
+
+      &:hover {
+        color: black;
+        border-color: black;
+      }
+    }
+  }
+}

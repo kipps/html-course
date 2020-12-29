@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77dabb12-ca95-4e1c-b7c9-de405a8499cd" name="Default" comment="Vertical align">
-      <change afterPath="$PROJECT_DIR$/demo-html/sticky/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-html/sticky/styles.scss" afterDir="false" />
+    <list default="true" id="77dabb12-ca95-4e1c-b7c9-de405a8499cd" name="Default" comment="Sticky">
+      <change afterPath="$PROJECT_DIR$/demo-html/accessibility/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-html/accessibility/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-html/tricks/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-html/tricks/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-html/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-html/gulpfile.js" afterDir="false" />
     </list>
@@ -46,19 +48,20 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-html/tricks/img" />
+      <recent name="$PROJECT_DIR$/demo-html/lesson-1/float" />
+      <recent name="$PROJECT_DIR$/demo-html/methods/OOCSS/styles" />
+      <recent name="$PROJECT_DIR$/demo-html/methods" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-html/lesson-1/" />
       <recent name="$PROJECT_DIR$/demo-html/lesson-1/float" />
       <recent name="$PROJECT_DIR$/demo-html/methods/OOCSS" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/demo-html/lesson-1/float" />
-      <recent name="$PROJECT_DIR$/demo-html/methods/OOCSS/styles" />
-      <recent name="$PROJECT_DIR$/demo-html/methods" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,7 +99,17 @@
       <workItem from="1537283521280" duration="4015000" />
       <workItem from="1537612548967" duration="5024000" />
       <workItem from="1608052007448" duration="189000" />
-      <workItem from="1608486773374" duration="5637000" />
+      <workItem from="1608486773374" duration="5708000" />
+      <workItem from="1608530237922" duration="9000" />
+      <workItem from="1608584498038" duration="2093000" />
+      <workItem from="1608648108528" duration="1061000" />
+      <workItem from="1609081602076" duration="4048000" />
+      <workItem from="1609092462314" duration="17000" />
+      <workItem from="1609092710640" duration="5321000" />
+      <workItem from="1609120176833" duration="575000" />
+      <workItem from="1609166782650" duration="598000" />
+      <workItem from="1609232757462" duration="10000" />
+      <workItem from="1609235768729" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="HTML">
       <created>1537291558043</created>
@@ -140,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608496636985</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sticky">
+      <created>1608498176230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608498176230</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,13 +178,14 @@
     <MESSAGE value="HTML" />
     <MESSAGE value="SCSS" />
     <MESSAGE value="Vertical align" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vertical align" />
+    <MESSAGE value="Sticky" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sticky" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="815" y="121" key="CommitChangelistDialog2" timestamp="1608496636865">
+    <state x="815" y="121" key="CommitChangelistDialog2" timestamp="1608498176129">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="815" y="121" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1608496636865" />
+    <state x="815" y="121" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1608498176129" />
     <state x="256" y="133" key="MergeDialog" timestamp="1608486879518">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -173,21 +194,21 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="822" y="434" key="MultipleFileMergeDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1608486879535" />
-    <state x="672" y="271" key="SettingsEditor" timestamp="1608496851057">
+    <state x="672" y="271" key="SettingsEditor" timestamp="1609120423834">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="672" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1608496851057" />
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1608496639747">
+    <state x="672" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1609120423834" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2" timestamp="1608498178830">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1608496639747" />
+    <state x="780" y="397" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1608498178830" />
     <state x="910" y="436" width="740" height="568" key="find.popup" timestamp="1608487136596">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="910" y="436" width="740" height="568" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1608487136596" />
-    <state x="859" y="322" width="840" height="1034" key="search.everywhere.popup" timestamp="1608494792032">
+    <state x="859" y="322" width="840" height="1034" key="search.everywhere.popup" timestamp="1608584735779">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="859" y="322" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1608494792032" />
+    <state x="859" y="322" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1608584735779" />
   </component>
 </project>
