@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-scss": "^1.4.0",
     "natives": "^1.1.6"
   },
